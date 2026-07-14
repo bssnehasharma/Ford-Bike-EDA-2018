@@ -10,13 +10,6 @@ st.set_page_config(page_title="Ford GoBike EDA", layout="wide")
 st.title("🚲 Ford GoBike 2018 EDA Dashboard")
 st.write("Exploratory Data Analysis for Ford Bike Sharing Data")
 
-uploaded_file = st.file_uploader("Upload FordGoBike_2018_All_Merged.csv", type="csv")
-
-if uploaded_file is not None:
-      df = pd.read_csv("FordGoBike_2018_All_Merged.csv")
-    st.success(f"✅ File loaded! Total rows: {len(df):,}")
-    st.dataframe(df.head())
-
 # 1. LOAD DATA
 @st.cache_data
 def load_data():
