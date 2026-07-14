@@ -127,7 +127,6 @@ st.pyplot(fig, use_container_width=False)
 
 # 4. Show the numbers in a table
 st.dataframe(df_month.rename(columns={'trip_duration_min': 'Avg Duration (min)'}).round(2))
-=======
 import streamlit as st
 import pandas as pd
 import numpy as np
