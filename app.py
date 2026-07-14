@@ -13,7 +13,7 @@ st.write("Exploratory Data Analysis for Ford Bike Sharing Data")
 uploaded_file = st.file_uploader("Upload FordGoBike_2018_All_Merged.csv", type="csv")
 
 if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
+      df = pd.read_csv("FordGoBike_2018_All_Merged.csv")
     st.success(f"✅ File loaded! Total rows: {len(df):,}")
     st.dataframe(df.head())
 
